@@ -29,6 +29,7 @@ body{
   align-items: center;
   justify-content: center;
 }
+
 .introduction{
   display: flex;
   flex-direction: column;
