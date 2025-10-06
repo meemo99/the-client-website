@@ -1,12 +1,43 @@
-body{
+body {
   margin: 0;
   padding: 0;
   display: block;
 
 }
 
+.header_banner {
+  color: white;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background-color: #3f2c4b;
+  align-items: center;
+  justify-content: center;
+}
 
-.case-studies{
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #5a7ab6;
+
+  @media screen and (min-width: 961px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
+.case-banner {
+  background-color: #8ACBBD;
+}
+
+.CID-logo { 
+  padding-right: 10px;
+  height: 110px;
+  width: 290px;
+}
+
+.case-studies {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 10px;
@@ -18,37 +49,6 @@ body{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
-}
-
-.header_banner{
-  color: white;
-  display: flex;
-  height: 80px;
-  width: 100%;
-  background-color: #3f2c4b;
-  align-items: center;
-  justify-content: center;
-}
-
-.introduction{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  color: #5a7ab6;
-
-  @media screen and (min-width: 961px) {
-  flex-direction: row;
-  justify-content: space-between;
-  }
-
-}
-.case-banner{
-  background-color: #8ACBBD;
-}
-.CID-logo{
-  padding-right: 10px;
-  height: 110px;
-  width: 290px;
 }
 
 
