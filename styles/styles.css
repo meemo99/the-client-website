@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   display: block;
-
 }
 
 .header_banner {
@@ -15,24 +14,24 @@ body {
   justify-content: center;
 }
 
+
 .introduction {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   color: #5a7ab6;
+  
 
   @media screen and (min-width: 961px) {
     flex-direction: row;
     justify-content: space-between;
+    max-width: 130ch;
   }
 
 }
-.case-banner {
-  background-color: #8ACBBD;
-}
 
 .CID-logo { 
-  padding-right: 10px;
+  padding-right: 45px;
   height: 110px;
   width: 290px;
 }
