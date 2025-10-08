@@ -7,19 +7,55 @@ body {
 .header_banner {
   color: white;
   display: flex;
+  flex-direction: row;
   height: 80px;
   width: 100%;
   background-color: #3f2c4b;
   align-items: center;
   justify-content: center;
+  gap: 10px;
+}
+
+h1 {
+  font-family: "EB Garamond", serif;
+  font-weight: 700;
+
+}
+
+a {
+  font-family: "EB Garamond", serif;
+  font-weight: 800;
+}
+
+.navigation .nav-button {
+  text-decoration: none;
+  flex: 1;
+  background-color: #EF858D;
+  outline-color: transparent;
+  margin: 6px;
+  padding: 3px;
+  border-radius: 5px;
+  color: white;
+}
+
+nav-container {
+  display: flex;
+  align-content: flex-end;
+}
+
+.nav-button:focus {
+background-color: #DBBE2C;
+color: black;
 }
 
 
 .introduction {
+  margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   color: #5a7ab6;
+
   
 
   @media screen and (min-width: 961px) {
@@ -35,8 +71,12 @@ body {
   height: 110px;
   width: 290px;
 }
+.case-banner {
+  background: linear-gradient(#8ACBBD);
+}
 
 .case-studies {
+  margin: 10px;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 10px;
@@ -50,65 +90,68 @@ body {
   }
 }
 
-
-/* From Uiverse.io by SouravBandyopadhyay */ 
-.card-title {
-  color: #262626;
-  font-size: 1.5em;
-  line-height: normal;
-  font-weight: 700;
-  margin-bottom: 0.5em;
-}
-
-.small-desc {
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 1.5em;
-  color: #452c2c;
-}
-
-.small-desc {
-  font-size: 1em;
-}
-
-.go-corner {
+.card{  
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 2em;
-  height: 2em;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  background: linear-gradient(135deg, #EF858D, #81262F);
-  border-radius: 0 4px 0 32px;
-}
-
-.go-arrow {
-  margin-top: -4px;
-  margin-right: -4px;
-  color: white;
-  font-family: courier, sans;
-}
-
-.card {
-  display: block;
-  position: relative;
-  max-width: 300px;
-  max-height: auto;
+  flex-direction: column;
+  justify-content: flex-start;
   background-color: #EBDAC5;
-  border-radius: 10px;
-  padding: 2em 1.2em;
   margin: 12px;
-  text-decoration: none;
-  z-index: 0;
-  overflow: hidden;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.5em;
+  border-radius: 5px;
+  max-width: 300px;
+  height: 320px;
+  box-shadow: 0.125rem 0 0 rgba(7,7,33,.15);
+}
+img {
+  border-radius: 5px;
+  height: 160px;
+  width: 290px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #0d3951;
+}
+.tags {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px;
+  color: white;
+  gap: 15px;
+  
 }
 
+.process{
+  background-color: #dbbe2cc7;
+  border-radius: 10px;
+  height: auto;
+  width: auto;
+  padding: 2px;
+  box-shadow: 0 3px 0 rgba(7,7,33,.15);
+}
 
-.card:hover .card-title {
-  transition: all 0.5s ease-out;
-  color: #5a7ab6;
+.participatie {
+  background-color: #81262fc7;
+  border-radius: 10px;
+  height: auto;
+  width: auto;
+  padding: 2px;
+  box-shadow: 0 3px 0 rgba(7,7,33,.15);
+
+}
+
+.uitvoering {
+  background-color: #5a7ab6ad;
+  border-radius: 10px;
+  height: auto;
+  width: auto;
+  padding: 2px;
+  box-shadow: 0 3px 0 rgba(7,7,33,.15);
+  
+}
+
+.footer {
+    background: #0d3951;
+
 }
